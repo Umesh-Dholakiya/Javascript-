@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gross Salary</title>
+</head>
+<body>
+
+    <script>
+
+        // (Quastion - 4 ) Gross salary :-  
+
+        let SALARY = (parseInt(prompt("Enter Your Value of SALARY : ")));
+        let HRA = (parseInt(prompt("Enter Your Value of HRA : ")));
+        let DA = (parseInt(prompt("Enter Your Value of Da : ")));
+        let TA = (parseInt(prompt("Enter Your Value of TA : ")));
+
+        let RS = SALARY + (SALARY *  HRA / 100) + (SALARY * DA / 100) + (SALARY * TA / 100);
+
+        document.write("SALARY : " + SALARY);
+        document.write("<br> HRA : " + HRA);
+        document.write("<br> DA : " + DA);
+        document.write("<br> TA : " + TA + " <br> ");
+
+        document.write(" Gross Salary : " + RS + " <br> ");
+    </script>
+
+</body>
+</html>
