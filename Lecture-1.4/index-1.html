@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>email = "umesh@gmail.com"</h3>
+    <h3>password = "umesh123"</h3>
+
+    <script>
+
+        var email = "umesh@gmail.com";
+        var pass = "umesh123";
+
+        var useremail = prompt("Enter Your Email ID For Change Password : ");
+
+        if(useremail == email){
+            var password = prompt("Enter Your New Password : ");
+                email = useremail;
+                pass = password;
+                alert("Your Password Has been Changed");
+        }
+        else{
+            console.log("Your Email Id Is Invalid...!");
+        }
+
+        document.write(`<h3 style="color:red;">${email}</h3>`);
+        document.write(`<h3 style="color:red;">${pass}</h3>`);
+
+        </script>
+    
+</body>
+</html>

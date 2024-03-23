@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        let a = (parseInt(prompt("Enter Your Age : ")));
+
+        if(a >= 5 && a <= 12){
+            document.write("Your ticket price is 5 rupee")
+        }
+        else if(a > 12 && a <= 18){
+            document.write("Your ticket price is 10 rupee")
+        }
+        else if(a > 18 && a <= 60){
+            document.write("Your ticket price is 20 rupee")
+        }
+        else if(a > 60) {
+            document.write("Your ticket price is 15 rupee")
+        }
+        else{
+            document.write("Your age is invalid...")
+        }
+        
+        
+
+        document.write(`<br> Your Age : ${a}` );
+    </script>
+</body>
+</html>
