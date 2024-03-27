@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let choice = (parseInt(prompt("Enter your Payment Option : ")));
+
+        switch (choice) {
+
+            case 1:
+                document.write("You Have Choose of card.." + "<br>")
+                document.write(" [ Pay Via Credit/Dabit/Master Card ]");
+                break;
+
+            case 2:
+                document.write("You Have Choose of UPI iD.." + "<br>")
+                document.write(" [ Pay Via UPI ID ]");
+                break;
+
+            case 3:
+                document.write("You Have Choose of Bank Transfar.." + "<br>")
+                document.write(" [ Pay Via Bank Transfar ]");
+                break;
+
+            case 4:
+                document.write("You Have Choose of Net Banking.." + "<br>")
+                document.write(" [ Pay Via Net Banking ]");
+                break;
+
+            default:
+                document.write(" Enter The Valid Payment Method :  ");
+
+        }
+    </script>
+
+
+
+</body>
+
+</html>
