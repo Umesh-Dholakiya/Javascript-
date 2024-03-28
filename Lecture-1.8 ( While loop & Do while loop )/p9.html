@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fibonacci Sequence</title>
+</head>
+
+<body>
+
+
+  <script>
+    var n1 = 0, n2 = 1, num3 = 0;
+    var a = parseInt(prompt("Enter Your Number : "));
+
+    console.log("Fibonacci Series : ");
+
+    do {
+      console.log(num3);
+      n1 = n2;
+      n2 = num3;
+      num3 = n1 + n2;
+      
+    } while (num3 < a);
+  </script>
+</body>
+
+</html>

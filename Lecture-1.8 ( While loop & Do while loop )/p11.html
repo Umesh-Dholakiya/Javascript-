@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Of All Odd Element</title>
+</head>
+
+<body>
+
+    <script>
+        let i = 1;
+        let oddSum = 0;
+        var a = parseInt(prompt("Enter Your Number a : "));
+
+        while (i <= a) { 
+            if (i % 2 !== 0) {
+                console.log(i); 
+                oddSum += i;   
+            }
+            i++;
+        }
+
+        console.log("Sum of all odd elements:", oddSum);
+    </script>
+</body>
+
+</html>
