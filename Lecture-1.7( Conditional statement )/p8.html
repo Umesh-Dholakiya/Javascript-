@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>week day from first letter</title>
+</head>
+<body>
+    <script>
+        let letter = prompt("Enter Your Week day: ");
+
+
+        if (letter === 'S' || letter === 's') {
+            console.log("Sunday");
+        } 
+        else if (letter === 'M' || letter === 'm') {
+            console.log("Monday");
+        } 
+        else if (letter === 'T' || letter === 't') {
+            console.log("Tuesday");
+        } 
+        else if (letter === 'W' || letter === 'w') {
+            console.log("Wednesday");
+        }
+         else if (letter === 'TH' || letter === 'th') {
+            console.log("Thrusday");
+        }
+         else if (letter === 'F' || letter === 'f') {
+            console.log("Friday");
+        }
+         else if (letter === 'Sat' || letter === 'sat') {
+            console.log("Saturday");
+        }
+         else {
+            console.log("Invalid Day");
+        }
+
+
+        // Display the result
+        console.log(`Day: ${letter}`);
+        
+    </script>
+</body>
+</html>

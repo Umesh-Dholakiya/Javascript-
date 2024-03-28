@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>basic calculator</title>
 </head>
 
 <body>
@@ -12,9 +12,9 @@
 
     <script>
 
-        let a = parseFloat(prompt("Enter The First Number a:"));
-        let b = parseFloat(prompt("Enter The Second Number b:"));
-        let choice = prompt("Select an operation (+, -, *, /):");
+        let a = (parseInt(prompt("Enter The First Number a:")));
+        let b = (parseInt(prompt("Enter The Second Number b:")));
+        let choice = prompt("Select Your Choice for (+, -, *, /):");
 
         let result;
 
@@ -35,13 +35,13 @@
             }
         } 
         else {
-            result = "Invalid operation. Please choose +, -, *, or /.";
+            result = "Invalid choice. Please choose +, -, *, or /.";
         }
 
         // Display the result
         console.log(`a = ${a}`);
         console.log(`b = ${b}`);
-        console.log(`Selected operation: ${operation}`);
+        console.log(`Selected Your Choice for: ${choice}`);
         console.log(`Ans = ${result}`);
 
     </script>
