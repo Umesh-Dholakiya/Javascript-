@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let First, sum;
+
+        let Last =(parseInt(prompt("Enter Your Number : ")));
+
+        First = Last % 10;
+
+        while (Last >= 9) {
+
+            Last = Last / 10;
+        }
+
+        sum = First + Last;
+
+        document.write("Sum of First and Last digit : " + sum);
+    </script>
+</body>
+
+</html>
