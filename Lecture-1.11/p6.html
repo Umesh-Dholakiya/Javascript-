@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulator</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        let choice = (parseInt(prompt("Enter Your Choice For Traffic Signels :  ")));
+
+        console.log("press 1 for Red Light......" + "<br>");
+        console.log("press 2 for Green Light........" + "<br>");
+        console.log("press 3 for Yellow Light......" + "<br>");
+
+        switch (choice) {
+
+            case 1:
+                console.log("You Have Choose Red Light...." + "<br>");
+                console.log("Red : Danger! Stop.");
+                break;
+
+            case 2:
+                console.log("You Have Choose Yellow Light...." + "<br>");
+                console.log(" Yellow : Prepare to stop.");
+                break;
+
+            case 3:
+                console.log("You Have Choose Green Light...." + "<br>");
+                console.log("Green : Go ahead!");
+                break;
+
+            default:
+                console.log("Invalid signal detected.");
+
+        }
+    </script>
+
+</body>
+
+</html>

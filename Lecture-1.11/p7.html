@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a;
+
+        console.log("press 1 for Bus......");
+        console.log("press 2 for Train........");
+        console.log("press 3 for Plane......");
+
+        let choice = parseInt(prompt("Enter your choice (1, 2, or 3) for Ticket Booking :"));
+
+        switch (choice) {
+
+            case 1:
+                console.log("You have Choose Bus Ticket....");
+
+                console.log("press 1 for Book A/C Luxury");
+                console.log("press 2 for Book Volvo Sleeper");
+                console.log("press 3 for Book Local Ordinary");
+
+                var a = (parseInt(prompt("Enter your Train Ticket for Booking ....!")));
+
+                switch (a) {
+
+                    case 1:
+                        console.log("Your A/C Luxury Bus Ticket Booking has been confirmed.");
+                        break;
+
+                    case 2:
+                        console.log("Your  Volvo Sleeper Bus Ticket Booking has been confirmed.");
+                        break;
+
+                    case 3:
+                        console.log("Your Local Ordinary Bus Ticket Booking has been confirmed.");
+                        break;
+
+                    default:
+                        console.log("Invalid choice. Please choose between 1, 2, or 3.");
+                        break;
+                }
+                break;
+
+            case 2:
+                console.log("You have Choose Train Ticket....");
+
+                console.log("press 1 for Book Business Class");
+                console.log("press 2 for Book First Class");
+                console.log("press 3 for Book Economy Class");
+
+                var a = (parseInt(prompt("Enter your Train Ticket for Booking ....!")));
+
+                switch (a) {
+
+                    case 1:
+                        console.log("Your Business Class Booking has been confirmed.");
+                        break;
+
+                    case 2:
+                        console.log("Your First Class Ticket Booking has been confirmed.");
+                        break;
+
+                    case 3:
+                        console.log("Your Economy Class Ticket Booking has been confirmed.");
+                        break;
+
+                    default:
+                        console.log("Invalid choice. Please choose between 1, 2, or 3.");
+                        break;
+                }
+                break;
+
+            case 3:
+                console.log("You have Choose Plane Ticket....");
+
+                console.log("press 1 for Book Business Class");
+                console.log("press 2 for Book First Class");
+                console.log("press 3 for Book Economy Class");
+
+                var a = (parseInt(prompt("Enter your Plane Ticket for Booking ....!")));
+
+                switch (a) {
+
+                    case 1:
+                        console.log("Your Business Class Ticket Booking has been confirmed.");
+                        break;
+
+                    case 2:
+                        console.log("Your First Class Ticket Booking has been confirmed.");
+                        break;
+
+                    case 3:
+                        console.log("Your Economy Class Ticket Booking has been confirmed.");
+                        break;
+
+                    default:
+                        console.log("Invalid choice. Please choose between 1, 2, or 3.");
+                        break;
+                }
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>
