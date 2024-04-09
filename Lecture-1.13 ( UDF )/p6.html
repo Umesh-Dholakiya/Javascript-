@@ -12,25 +12,26 @@
 
     <script>
 
-        let a = parseInt(prompt("Enter Your First Value : "));
-        let b = parseInt(prompt("Enter Your Second Value : "));
+        let num1 = parseInt(prompt("Enter Your First Value : "));
+        let num2 = parseInt(prompt("Enter Your Second Value : "));
 
-        function swap(a,b){
-            return a;
-            return b;
-            return [a , b];
-        }
-        console.log(swap(a,b));
+        console.log("Original values : ");
+        console.log("num1 : " + num1);
+        console.log("num2 : " + num2);
 
-        function Swap(a, b) {
-            let c = a;
-            a = b;
-            b = c;
-            return [a, b];
-
+        function swap(num1, num2){
+            let c = num1;
+            num1 = num2;
+            num2 = c;
+            return [num1 , num2];
         }
 
-        console.log(Swap(a, b));
+
+        let [result1, result2] = swap(num1, num2);
+        console.log("\n Swapped values (using c variable) : ");
+        console.log("num1 : " + result1);
+        console.log("num2 : " + result2);
+
 
     </script>
 </body>
