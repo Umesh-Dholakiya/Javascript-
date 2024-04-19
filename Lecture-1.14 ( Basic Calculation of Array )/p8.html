@@ -8,10 +8,14 @@
 </head>
 
 <body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    
     <script>
         var arr = [1, -2, 33, -4, 95, -6, -54, 23];
 
-        document.write("Original array : " + arr) ;
+        document.getElementById("demo").innerHTML = ("Original array : " + arr);
 
         function Negative(element) {
             return element < 0;
@@ -19,8 +23,8 @@
 
         var negativeValue = arr.filter(Negative);
 
-        document.write("<br><br> Negative Elements:  ", negativeValue + " ");
+        document.getElementById("demo1").innerHTML = ("Negative Elements :  " + negativeValue );
     </script>
 </body>
 
-</html> 
+</html>

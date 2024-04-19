@@ -8,6 +8,8 @@
 </head>
 
 <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
     <script>
 
         var arr = [10 , 20 , 30 , 40 , 50 , 60 , 70 , 80 , 90 ];
@@ -17,8 +19,8 @@
             sum += element;
         });
 
-        document.write("Original array : " + arr);
-        document.write("<br> Sum of all array elements : " + sum);
+        document.getElementById("demo").innerHTML = ("Original array : " + arr);
+        document.getElementById("demo1").innerHTML = ("Sum of all array elements : " + sum);
 
 
     </script>
