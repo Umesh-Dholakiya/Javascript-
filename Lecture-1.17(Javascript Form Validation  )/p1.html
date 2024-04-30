@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            text-decoration: none;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            background: url("https://images.pexels.com/photos/2618804/pexels-photo-2618804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 450px;
+            height: 700px;
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: -8px -8px 8px rgba(0, 0, 0, 0.1),8px 8px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(5px);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border-radius: 20px;
+            /* margin-top: 30px; */
+        }
+        label{
+            color: #fff;
+            margin-left: 5px;
+        }
+        .card h2 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .card a.fp {
+            width: 100%;
+            display: flex;
+            color: #5881D0;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .form input {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            color: #fff;
+            background-color: transparent;
+            font-family: "Roboto Mono", sans-serif;
+            box-shadow: -8px -8px 8px rgba(0, 0, 0, 0.1),8px 8px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+            outline: none;
+        }
+        form input::placeholder{
+            color: #fff;
+        }
+        .form input.email {
+            margin-bottom: 15px;
+        }
+
+        .form input.pass {
+            margin-bottom: 10px;
+        }
+
+        .login_btn {
+            font-size: 20px;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            background-color: #000;
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            /* background: linear-gradient(-90deg, #003A74, #006AD5); */
+            box-shadow: -8px -8px 8px rgba(0, 0, 0, 0.1),8px 8px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card" id="message">
+        <h2>Login Form</h2>
+
+        <form action="" onsubmit="return validateForm()" class="form">
+
+            <label for="name">First Name </label>
+            <input type="text" name="fname" placeholder="Enter Your First Name Here" id="fname">
+
+            <label for="name">Last Name </label>
+            <input type="text" name="lname" placeholder="Enter Your Last Name Here" id="lname">
+
+            <label for="email">Email </label>
+            <input type="email" placeholder="Your Email Adress" class="email" name="email" id="email">
+
+            <label for="username">Username </label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username Here..">
+
+            <label for="number">Mobile Number </label>
+            <input type="number" name="number" id="number" placeholder="Enter Your Mobile Number Here">
+
+            <label for="password ">Password</label>
+            <input type="password" placeholder="Your Password Here" id="pswd1" name="password">
+
+            <label for="password ">Confirm Password</label>
+            <input type="password" placeholder="Your Confirm Password Here" id="pswd2" class="password"
+                name="confirm_password">
+
+            <input type="submit" name="submit" class="login_btn">
+        </form>
+
+        <a href="#" class="fp">Forgot password?</a>
+    </div>
+
+    <script>
+
+
+        function validateForm() {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var pswd1 = document.getElementById("pswd1").value;
+            var pswd2 = document.getElementById("pswd2").value;
+
+
+            if (fname == "") {
+                alert("Fill the First Name please!.");
+                return false;
+            }
+            else if (lname == "") {
+                alert("Fill the Last Name please!.");
+                return false;
+            }
+            else if (email == null || email == "") {
+                alert("Fill the Email please!");
+                return false;
+            }
+
+            else if (pswd1 == "" || pswd2 == "") {
+                alert("Fill the password please!");
+                return false;
+            }
+            else if (pswd1.length < 8 && pswd1.length > 15) {
+                alert("Your Password length Is 8 to 15 Character long.");
+                return false;
+            }
+            else if (pswd1 != pswd2) {
+                alert("Passwords are not same");
+                return false;
+            }
+            else {
+                alert("Your password created successfully");
+                alert("Your form has been submitted successfully");
+            }
+        }
+    </script>
+</body>
+
+</html>
