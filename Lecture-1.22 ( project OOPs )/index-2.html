@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quastion-2</title>
+</head>
+
+<body>
+    <table id="myTable" border="1">
+    </table>
+</body>
+
+<script>
+
+    function Person(name, email, phone) {
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    let data = [
+        new Person("jay",    "jay@gmail.com",    "12345"),
+        new Person("ajay",   "ajay@gmail.com",   "12345"),
+        new Person("vijay",  "vijay@gmail.com",  "12345"),
+        new Person("ashish", "ashish@gmail.com", "12345"),
+    ];
+
+    function createTableRow(person) {
+        return `<tr>
+        <td>${person.name}</td>
+        <td>${person.email}</td>
+        <td>${person.phone}</td>
+    </tr>`;
+    }
+
+    function createTable(data) {
+        let tableRows = data.map(createTableRow).join("\n");
+        return `<table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${tableRows}
+        </tbody>
+    </table>`;
+    }
+
+    let tableHtml = createTable(data);
+    document.write(tableHtml);
+</script>
+
+</html>

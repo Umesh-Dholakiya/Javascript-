@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quastion-1</title>
+</head>
+
+<body>
+    <script>
+        class Student {
+            constructor(physics, chemistry, biology, mathematics, computer) {
+                this.physics = physics;
+                this.chemistry = chemistry;
+                this.biology = biology;
+                this.mathematics = mathematics;
+                this.computer = computer;
+            }
+
+            calcPercentage() {
+                let totalMarks = this.physics + this.chemistry + this.biology + this.mathematics + this.computer;
+                let percentage = (totalMarks / 500) * 100;
+                return percentage.toFixed(2);
+            }
+
+            calcGrade() {
+                let percentage = this.calcPercentage();
+                if (percentage >= 90) {
+                    return 'A';
+                } else if (percentage >= 80) {
+                    return 'B';
+                } else if (percentage >= 70) {
+                    return 'C';
+                } else if (percentage >= 60) {
+                    return 'D';
+                } else if (percentage >= 50) {
+                    return 'E';
+                } else if (percentage >= 40) {
+                    return 'F';
+                }
+            }
+        }
+
+
+        let physics = parseFloat(prompt("Enter Physics Marks:"));
+        let chemistry = parseFloat(prompt("Enter Chemistry Marks:"));
+        let biology = parseFloat(prompt("Enter Biology Marks:"));
+        let mathematics = parseFloat(prompt("Enter Mathematics Marks:"));
+        let computer = parseFloat(prompt("Enter Computer Marks:"));
+
+
+        let student = new Student(physics, chemistry, biology, mathematics, computer);
+
+
+        let percentage = student.calcPercentage();
+        let grade = student.calcGrade();
+
+        console.log("Percentage: " + percentage + "%");
+        console.log("Grade: " + grade);
+
+    </script>
+</body>
+
+</html>
