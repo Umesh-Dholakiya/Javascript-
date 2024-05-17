@@ -1,0 +1,175 @@
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    text-align: center;
+    background-color: #DCE5FD;
+    border: 1px solid #000; 
+ 
+}
+.table-header {
+    background-color: #DCE5FD;
+    border-bottom: 1px solid #000; 
+}
+
+table .bux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000;      */
+}
+
+table td,
+table th {
+    padding: 10px;
+    color: #000;
+    /* border: 1px solid #000;  */
+ 
+}
+
+table .total th {
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #000; */
+
+}
+
+table .total td {
+    text-align: center;
+    font-weight: 700;
+} 
+table .Box,
+table .Bux,
+table .Name,
+table .Price,
+table .Stock,
+table .Btn {
+    color: #3F0097;
+}
+
+table .checkbox,
+table .bux,
+table .name,
+table .price,
+table .stock,
+table .btn{
+    color: #000;
+    /* border: 1px solid #000; */
+    
+}
+
+
+.mobile-header {
+    display: none;
+}
+
+.table-headers {
+    background-color: #DCE5FD;
+    
+    /* margin-left: 0 50px; */
+}
+.btn {
+    /* background-color: #088178; */
+    color: #ffffff;
+    border: none;
+    font-size: 11px;
+    font-weight: 400;
+    border-radius: 4px;
+    /* display: inline-block; */
+    padding: 6px 19px;
+}
+
+.btn button:hover{
+    background-color: #000;
+    color: #fff;
+}
+@media only screen and (max-width: 767px) {
+    p {
+        display: block;
+        font-weight: bold;
+    }
+
+    table tr td:not(:first-child),
+    table tr th:not(:first-child),
+    table tr td:not(.total-val) {
+        display: none;
+    }
+
+    table tr:nth-of-type(even) td:first-child {
+        background-color: #d9f4f2;
+    }
+
+    table tr:nth-of-type(odd) td:first-child {
+        background-color: white;
+    }
+
+    table tr:nth-of-type(even) td:not(:first-child) {
+        background-color: white;
+    }
+
+    table tr th:first-child {
+        width: 100%;
+        display: block;
+    }
+
+    table tr th:not(:first-child) {
+        width: 40%;
+        transition: transform 0.4s ease-out;
+        transform: translateY(-9999px);
+        position: relative;
+        z-index: -1;
+    }
+
+    table tr td:not(:first-child) {
+        transition: transform 0.4s ease-out;
+        transform: translateY(-9999px);
+        width: 60%;
+        position: relative;
+        z-index: -1;
+    }
+
+    table tr td:first-child {
+        display: block;
+        cursor: pointer;
+    }
+
+    table tr.total th {
+        width: 25%;
+        display: inline-block;
+    }
+
+    table tr td.total-val {
+        display: inline-block;
+        transform: translateY(0);
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    table tr th:not(:first-child) {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    table tr td:not(:first-child) {
+        width: 50%;
+        font-size: 14px;
+    }
+} 
+
+/*# sourceMappingURL=table.css.map */
+
+.table-card {
+    background-color: #2a3042;
+}
+
+.table-header {
+    border-bottom: 2px solid #383e50;
+}
+
+.table-header h3 {
+    color: #fff;
+    padding: 10px 15px;
+
+} 

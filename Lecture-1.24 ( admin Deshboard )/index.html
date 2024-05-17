@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,   initial-scale=1.0">
+    <title>Admin Desh-board</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/table.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- for header part -->
+    <header>
+
+        <div class="logosec">
+            <div class="logo"><img src="img/logo.png" alt="" width="100" height="100"
+                    style="display: flex; justify-content: center; align-items: center; margin-left: 30px;"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <div class="searchbtn">
+                <i class="fa-solid fa-magnifying-glass" style="color: #fff;"></i>
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt="">
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+
+    </header>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+
+                    <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                        <h3> Articles</h3>
+                    </div>
+
+                    <div class="nav-option option3">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                            class="nav-img" alt="report">
+                        <h3> Report</h3>
+                    </div>
+
+                    <div class="nav-option option4">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                            class="nav-img" alt="institution">
+                        <h3> Institution</h3>
+                    </div>
+
+                    <div class="nav-option option5">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png"
+                            class="nav-img" alt="blog">
+                        <h3> Profile</h3>
+                    </div>
+
+                    <div class="nav-option option6">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/4.png"
+                            class="nav-img" alt="settings">
+                        <h3> Settings</h3>
+                    </div>
+
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h3>Logout</h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+
+            <div class="searchbar2">
+                <input type="text" name="" id="" placeholder="Search">
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                        class="icn srchicn" alt="search-button">
+                </div>
+            </div>
+
+            <div class="box-container">
+
+                <div class="box box1">
+                    <div class="text">
+                        <h2 class="topic-heading">60.5k</h2>
+                        <h2 class="topic">Article Views</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png"
+                        alt="Views">
+                </div>
+
+                <div class="box box2">
+                    <div class="text">
+                        <h2 class="topic-heading">150</h2>
+                        <h2 class="topic">Likes</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes">
+                </div>
+
+                <div class="box box3">
+                    <div class="text">
+                        <h2 class="topic-heading">320</h2>
+                        <h2 class="topic">Comments</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png"
+                        alt="comments">
+                </div>
+
+                <div class="box box4">
+                    <div class="text">
+                        <h2 class="topic-heading">70</h2>
+                        <h2 class="topic">Published</h2>
+                    </div>
+
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published">
+                </div>
+            </div>
+
+            <div class="col-12 table-card" style="margin-top: 100px;">
+                <table>
+                    <thead >
+                        <tr class="table-headers" style="border-bottom: 1px solid #000;">
+                            <th class="Box">#</th>
+                            <th class="Bux">Product-Image</th>
+                            <th class="Name">Product-Name</th>
+                            <th class="Price">Price</th>
+                            <th class="Stock">Avaliability</th>
+                            <th class="Btn" style="text-align: center;">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-box">
+                        <tr style="border-right: 1px solid #000;"> 
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/mobile.jpeg" alt="" width="60"></td>
+                            <td class="name">Vivo V27 Pro 5g</td>
+                            <td class="price">5000.72</td>
+                            <td class="stock">In stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/laptop.jpg" width="100" alt=""></td>
+                            <td class="name">G series Laptop</td>
+                            <td class="price">50000.72</td>
+                            <td class="stock">In stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/computer.jpeg" width="100" alt=""></td>
+                            <td class="name">Dell Computer</td>
+                            <td class="price">40000.00</td>
+                            <td class="stock">Out Of stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/chair.jpeg" width="100" alt=""></td>
+                            <td class="name">Fancy Chair</td>
+                            <td class="price">1100.89</td>
+                            <td class="stock">In stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/sofa.png" width="100" style="padding: 0;"></td>
+                            <td class="name">3 Seater Sofa</td>
+                            <td class="price">5000.00</td>
+                            <td class="stock">Out Of stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="checkbox"><input type="checkbox" name="" id=""></th>
+                            <td class="bux"><img src="img/watch.jpeg" width="70" alt=""></td>
+                            <td class="name">Rolex Watch</td>
+                            <td class="price">5300.00</td>
+                            <td class="stock">In stock</td>
+                            <td class="btn">
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">View</button>
+                                <button
+                                    style="background-color: transparent; border: 1px solid #000; color: #000; border-radius: 10%; padding: 15px 45px; margin-right: 40px; font-size: 15px;">Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let menuicn = document.querySelector(".menuicn");
+        let nav = document.querySelector(".navcontainer");
+
+        menuicn.addEventListener("click", () => {
+            nav.classList.toggle("navclose");
+        })
+    </script>
+</body>
+
+</html>

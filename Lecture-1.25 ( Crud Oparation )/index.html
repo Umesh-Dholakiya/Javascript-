@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Oparation</title>
+
+    <!-- font-awesome css  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <!-- custom css  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onload="readAll()">
+
+    <section class="form_sec">
+        <div class="container">
+            <div class="row">
+                <button class="add" onclick="creat()">Add <i class="fa-solid fa-plus"></i></button>
+                <form action="">
+                    <div class="create-form">
+                        <h2
+                            style="color: aliceblue; display: flex; align-items: center; justify-content: center; padding-bottom: 10px">
+                            Create Your Data </h2>
+                        <input type="text" placeholder="Enter Your Name" class="name" style="padding: 10px;">
+                        <input type="email" placeholder="Enter Your Email" class="email" style="padding: 10px;">
+                        <input type="button" onclick="add()" value="Creat"  style="padding: 10px;">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="update-form">
+                        <input type="text" class="id" hidden>
+                        <h2
+                            style="color: aliceblue; display: flex; align-items: center; justify-content: center; padding-bottom: 10px;">
+                            Update Your Data </h2>
+                        <input type="text" placeholder="Enter Your Name" class="uname" style="padding: 10px;">
+                        <input type="email" placeholder="Enter Your Email" class="uemail" style="padding: 10px;">
+                        <input type="button" value="Update" onclick="update()"  style="padding: 10px;">
+                    </div>
+                </form>
+                <table>
+                    <thead class="data-title">
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </thead>
+
+                    <tbody class="data_table">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/crud.js"></script>
+
+</body>
+
+</html> 
