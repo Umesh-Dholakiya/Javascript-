@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p id="joke"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+                {
+                    "joke": "I try not to spend too much time online, but Wi-Fight it?"
+                },
+                {
+                    "joke": "What do you call two guys above a window? Curt 'n Rod"
+                },
+                {
+                    "joke": "I went for a job interview today... The interviewer said to me, What would you say your greatest weakness is? I said, I think Id have to say my listening skills are my greatest strength."
+                },
+                {
+                    "joke": "I wanted to put a pizza joke here ...but it was too saucy."
+                },
+                {
+                    "joke": "What do you call the Hamburglar's accomplice? hamburglar helpler"
+                },
+                {
+                    "joke": "What are caterpillars afraid of? DOGerpillars!"
+                },
+                {
+                    "joke": "How do you get down from an elephant? You don't, you get down from a duck"
+                },
+                {
+                    "joke": "When is the month when the most trees fall? Sep-timber"
+                },
+                {
+                    "joke": "what do you call a vampire that sucks mucus instead of blood? nose-feratu!"
+                },
+                {
+                    "joke": "Dolphins don't do anything by accident... Always on porpoise."
+                },
+                {
+                    "joke": "You know what I hate about fashion designers? They are so clothes-minded."
+                },
+                {
+                    "joke": "What do you call the ultimate fish doctor? The Sturgeon General"
+                },
+                {
+                    "joke": "What is tuba plus tuba? Fourba!"
+                },
+                {
+                    "joke": "Did you hear about the guy who fell into an upholstery machine? Now he's fully recovered."
+                },
+                {
+                    "joke": "What did the tailpipe say to the muffler? I'm exhausted. What did the muffler say back? ^mmmmbfmbm"
+                },
+                {
+                    "joke": "Why is Ireland the richest country in the world? Because it's capital is always Dublin."
+                },
+                {
+                    "joke": "What's a comedian's favorite candy? Laffy Taffy."
+                },
+                {
+                    "joke": "How do you find Will Smith in the snow? You look for fresh prince..."
+                },
+                {
+                    "joke": "Here's a funny joke I heard about pizza oh nevermind. It's too cheesy."
+                }
+            ]
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("joke").innerHTML = country[index].joke;
+
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

@@ -24,9 +24,9 @@ function readAll() {
             <tr>
                 <td>${record.name}</td>
                 <td>${record.email}</td>
-                <td>
-                <button class="edit" onclick="(edit(${record.id}))">Edit</button>
-                <button class="delet" onclick="(delet(${record.id}))" >Delete</button> 
+                <td class="flex">
+                <button class="edit tbtn" onclick="(edit(${record.id}))">Edit</button>
+                <button class="delet tbtn" onclick="(delet(${record.id}))" >Delete</button> 
                 </td>
             </tr>
         `

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+
+<body>
+
+    <p id="name"></p>
+    <p id="cloud_pct"></p>
+    <p id="temp"></p>
+    <p id="feels_like"></p>
+    <p id="humidity"></p>
+    <p id="min_temp"></p>
+    <p id="max_temp"></p>
+    <p id="wind_speed"></p>
+    <p id="wind_degrees"></p>
+    <p id="sunrise"></p>
+    <p id="sunset"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+
+
+                {
+                    "name ": "India",
+                    "cloud_pct": 67,
+                    "temp": 9,
+                    "feels_like": 9,
+                    "humidity": 93,
+                    "min_temp": 9,
+                    "max_temp": 9,
+                    "wind_speed": 1.03,
+                    "wind_degrees": 0,
+                    "sunrise": 1716780255,
+                    "sunset": 1716835935
+                },
+                {
+                    "name ": "London",
+                    "cloud_pct": 42,
+                    "temp": 11,
+                    "feels_like": 11,
+                    "humidity": 85,
+                    "min_temp": 10,
+                    "max_temp": 12,
+                    "wind_speed": 3.6,
+                    "wind_degrees": 220,
+                    "sunrise": 1716782000,
+                    "sunset": 1716840144
+                },
+                {
+                    "name ": "USA",
+                    "cloud_pct": 58,
+                    "temp": 18,
+                    "feels_like": 18,
+                    "humidity": 75,
+                    "min_temp": 18,
+                    "max_temp": 18,
+                    "wind_speed": 1.91,
+                    "wind_degrees": 133,
+                    "sunrise": 1716780699,
+                    "sunset": 1716823695
+                },
+                {
+                    "name": "Pakistan",
+                    "cloud_pct": 0,
+                    "temp": 34,
+                    "feels_like": 31,
+                    "humidity": 6,
+                    "min_temp": 34,
+                    "max_temp": 34,
+                    "wind_speed": 13.67,
+                    "wind_degrees": 320,
+                    "sunrise": 1716769258,
+                    "sunset": 1716819223
+                },
+                {
+                    "name": "Japan",
+                    "cloud_pct": 75,
+                    "temp": 24,
+                    "feels_like": 25,
+                    "humidity": 77,
+                    "min_temp": 22,
+                    "max_temp": 26,
+                    "wind_speed": 9.77,
+                    "wind_degrees": 200,
+                    "sunrise": 1716751720,
+                    "sunset": 1716803277
+                },
+                {
+                    "name": "Afghanistan",
+                    "cloud_pct": 0,
+                    "temp": 21,
+                    "feels_like": 20,
+                    "humidity": 17,
+                    "min_temp": 21,
+                    "max_temp": 21,
+                    "wind_speed": 5.25,
+                    "wind_degrees": 314,
+                    "sunrise": 1716769809,
+                    "sunset": 1716820592
+                },
+                {
+                    "name" : "New York",
+                    "cloud_pct": 100,
+                    "temp": 19,
+                    "feels_like": 19,
+                    "humidity": 91,
+                    "min_temp": 18,
+                    "max_temp": 21,
+                    "wind_speed": 4.12,
+                    "wind_degrees": 170,
+                    "sunrise": 1716802173,
+                    "sunset": 1716855437
+                }
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("name").innerHTML = country[index].name;
+            document.getElementById("cloud_pct").innerHTML = country[index].cloud_pct;
+            document.getElementById("temp").innerHTML = country[index].temp;
+            document.getElementById("feels_like").innerHTML = country[index].feels_like;
+            document.getElementById("humidity").innerHTML = country[index].humidity;
+            document.getElementById("min_temp").innerHTML = country[index].min_temp;
+            document.getElementById("max_temp").innerHTML = country[index].max_temp;
+            document.getElementById("wind_speed").innerHTML = country[index].wind_speed;
+            document.getElementById("wind_degrees").innerHTML = country[index].wind_degrees;
+            document.getElementById("sunrise").innerHTML = country[index].sunrise;
+            document.getElementById("sunset").innerHTML = country[index].sunset;
+
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

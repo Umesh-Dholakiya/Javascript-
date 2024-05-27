@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical-event</title>
+</head>
+
+<body>
+
+    <p id="year"></p>
+    <p id="month"></p>
+    <p id="day"></p>
+    <p id="event"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+                {
+                    "year": " year  : -45",
+                    "month": "month : 01",
+                    "day": "  day   : 01",
+                    "event": "event : The Julian calendar takes effect as the civil calendar of the Roman Empire, establishing January 1 as the new date of the new year."
+                },
+                {
+                    "year": " year  : 366",
+                    "month": "month : 01",
+                    "day": "  day   : 02",
+                    "event": "event : The Alemanni cross the frozen Rhine in large numbers, invading the Roman Empire."
+                },
+                {
+                    "year": " year  : 250",
+                    "month": "month : 01",
+                    "day": "  day   : 03",
+                    "event": "event : Emperor Decius orders everyone in the Roman Empire (except Jews) to make sacrifices to the Roman gods."
+                },
+                {
+                    "year": " year  : -27",
+                    "month": "month :  01",
+                    "day": "  day   :  16",
+                    "event": "event :  Gaius Julius Caesar Octavianus is granted the title Augustus by the Roman Senate, marking the beginning of the Roman Empire."
+                },
+                {
+                    "year": " year  : 379",
+                    "month": "month : 01",
+                    "day": "  day   : 19",
+                    "event": "event : Emperor Gratian elevates Flavius Theodosius at Sirmium to Augustus, and gives him authority over all the eastern provinces of the Roman Empire."
+                },
+                {
+                    "year": " year  : 1719",
+                    "month": "month : 01",
+                    "day": "  day   : 23",
+                    "event": "event : The Principality of Liechtenstein is created within the Holy Roman Empire."
+                },
+                {
+                    "year": " year  : 98",
+                    "month": "month : 01",
+                    "day": "  day   : 27",
+                    "event": "event : Trajan succeeds his adoptive father Nerva as Roman emperor; under his rule the Roman Empire will reach its maximum extent."
+                },
+                {
+                    "year": "year  : 1018",
+                    "month": "month : 01",
+                    "day": " day   : 30",
+                    "event": "event : Poland and the Holy Roman Empire conclude the Peace of Bautzen."
+                },
+                {
+                    "year": "year  : 421",
+                    "month": "month : 02",
+                    "day": " day   : 08",
+                    "event": "event : Constantius III becomes co-Emperor of the Western Roman Empire."
+                },
+                {
+                    "year": "year : 55",
+                    "month": "month : 02",
+                    "day": "day : 11",
+                    "event": " event : The death under mysterious circumstances of Tiberius Claudius Caesar Britannicus, heir to the Roman empire, on the eve of his coming of age clears the way for Nero to become Emperor."
+                }
+
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("year").innerHTML = country[index].year;
+            document.getElementById("month").innerHTML = country[index].month;
+            document.getElementById("day").innerHTML = country[index].day;
+            document.getElementById("event").innerHTML = country[index].event;
+
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

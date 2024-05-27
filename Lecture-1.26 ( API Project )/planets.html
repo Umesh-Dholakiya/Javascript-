@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+</head>
+
+<body>
+
+    <p id="name"></p>
+    <p id="mass"></p>
+    <p id="radius"></p>
+    <p id="period"></p>
+    <p id="semi_major_axis"></p>
+    <p id="temperature"></p>
+    <p id="distance_light_year"></p>
+    <p id="host_star_mass"></p>
+    <p id="host_star_temperature"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+                {
+                    "name": "Neptune",
+                    "mass": 0.0537,
+                    "radius": 0.346,
+                    "period": 59800,
+                    "semi_major_axis": 30.07,
+                    "temperature": 72,
+                    "distance_light_year": 0.000478,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                }, {
+                    "name": "Earth",
+                    "mass": 0.00315,
+                    "radius": 0.0892,
+                    "period": 365.2,
+                    "semi_major_axis": 1,
+                    "temperature": 288,
+                    "distance_light_year": 0,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Saturn",
+                    "mass": 0.299,
+                    "radius": 0.843,
+                    "period": 10747,
+                    "semi_major_axis": 9.537,
+                    "temperature": 134,
+                    "distance_light_year": 0.00017,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Mercury",
+                    "mass": 0.000174,
+                    "radius": 0.0341,
+                    "period": 88,
+                    "semi_major_axis": 0.387098,
+                    "temperature": 400,
+                    "distance_light_year": 0.000011,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Venus",
+                    "mass": 0.00257,
+                    "radius": 0.0847,
+                    "period": 224.7,
+                    "semi_major_axis": 0.723332,
+                    "temperature": 737,
+                    "distance_light_year": 0.000004,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Mars",
+                    "mass": 0.000338,
+                    "radius": 0.0488,
+                    "period": 687,
+                    "semi_major_axis": 1.542,
+                    "temperature": 210,
+                    "distance_light_year": 0.000037,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Jupiter",
+                    "mass": 1,
+                    "radius": 1,
+                    "period": 4331,
+                    "semi_major_axis": 5.204,
+                    "temperature": 165,
+                    "distance_light_year": 0.000088,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                },
+                {
+                    "name": "Uranus",
+                    "mass": 0.0457,
+                    "radius": 0.358,
+                    "period": 30589,
+                    "semi_major_axis": 19.191,
+                    "temperature": 76,
+                    "distance_light_year": 0.000304,
+                    "host_star_mass": 1,
+                    "host_star_temperature": 6000
+                }
+
+
+
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("name").innerHTML = country[index].name;
+            document.getElementById("mass").innerHTML = country[index].mass;
+            document.getElementById("radius").innerHTML = country[index].radius;
+            document.getElementById("period").innerHTML = country[index].period;
+            document.getElementById("semi_major_axis").innerHTML = country[index].semi_major_axis;
+            document.getElementById("temperature").innerHTML = country[index].temperature;
+            document.getElementById("distance_light_year").innerHTML = country[index].distance_light_year;
+            document.getElementById("host_star_mass").innerHTML = country[index].host_star_mass;
+            document.getElementById("host_star_temperature").innerHTML = country[index].host_star_temperature;
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

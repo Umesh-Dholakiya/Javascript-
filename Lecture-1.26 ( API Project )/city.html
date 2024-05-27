@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City</title>
+</head>
+
+<body>
+
+    <p id="name"></p>
+    <p id="latitude"></p>
+    <p id="longitude"></p>
+    <p id="country"></p>
+    <p id="population"></p>
+    <p id="is_capital"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+                {
+                    "name": "Indianapolis",
+                    "latitude": 39.7771,
+                    "longitude": -86.1458,
+                    "country": "US",
+                    "population": 1588961,
+                    "is_capital": false
+                },
+                {
+                    "name": "San Francisco",
+                    "latitude": 37.7562,
+                    "longitude": -122.443,
+                    "country": "US",
+                    "population": 3592294,
+                    "is_capital": false
+                },
+                {
+                    "name": "Canada De Gomez",
+                    "latitude": -32.8167,
+                    "longitude": -61.4,
+                    "country": "AR",
+                    "population": 29205,
+                    "is_capital": false
+                },
+                {
+                    "name": "Chinandega",
+                    "latitude": 12.6242,
+                    "longitude": -87.1297,
+                    "country": "NI",
+                    "population": 151707,
+                    "is_capital": false
+                },
+                {
+                    "name": "Busan",
+                    "latitude": 35.1,
+                    "longitude": 129.04,
+                    "country": "KR",
+                    "population": 3440484,
+                    "is_capital": false
+                },
+                {
+                    "name": "Zhoukou",
+                    "latitude": 33.625,
+                    "longitude": 114.642,
+                    "country": "CN",
+                    "population": 9901000,
+                    "is_capital": false
+                },
+                {
+                    "name": "Vacaria",
+                    "latitude": -28.5122,
+                    "longitude": -50.9339,
+                    "country": "BR",
+                    "population": 56765,
+                    "is_capital": false
+                },
+                {
+                    "name": "Gujrat",
+                    "latitude": 32.5736,
+                    "longitude": 74.0789,
+                    "country": "INDIA",
+                    "population": 328512,
+                    "is_capital": false
+                }
+
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("name").innerHTML = country[index].name;
+            document.getElementById("latitude").innerHTML = country[index].latitude;
+            document.getElementById("longitude").innerHTML = country[index].longitude;
+            document.getElementById("country").innerHTML = country[index].country;
+            document.getElementById("population").innerHTML = country[index].population;
+            document.getElementById("is_capital").innerHTML = country[index].is_capital;
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random-User</title>
+</head>
+
+<body>
+
+    <p id="username"></p>
+    <p id="sex"></p>
+    <p id="address"></p>
+    <p id="name"></p>
+    <p id="email"></p>
+    <p id="birthday"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+
+                {
+                    "username": "johnsonmichael",
+                    "sex": "M",
+                    "address": "025 Joseph Crescent Suite 381, Elaineside, DE 39699",
+                    "name": "Steven Smith",
+                    "email": "scottreyes@hotmail.com",
+                    "birthday": "1922-12-18"
+                },
+                {
+                    "username": "davidsonannette",
+                    "sex": "F",
+                    "address": "7214 Hill Burg Suite 528, Lake Matthewview, MO 82842",
+                    "name": "Megan Lindsey",
+                    "email": "ytaylor@gmail.com",
+                    "birthday": "1975-09-07"
+                },
+                {
+                    "username": "lisagutierrez",
+                    "sex": "M",
+                    "address": "29255 Benson Mission Apt. 068, Humphreyburgh, TX 88790",
+                    "name": "Bruce Romero",
+                    "email": "tlane@hotmail.com",
+                    "birthday": "1978-05-18"
+                },
+                {
+                    "username": "hriley",
+                    "sex": "M",
+                    "address": "9233 Justin Shores Apt. 776, Port Christian, WI 57094",
+                    "name": "Gregory Stewart",
+                    "email": "carriehill@yahoo.com",
+                    "birthday": "1956-12-13"
+                },
+                {
+                    "username": "paul74",
+                    "sex": "F",
+                    "address": "30263 Wallace Brook Apt. 660, North Jasonmouth, RI 21564",
+                    "name": "Karen Rivera",
+                    "email": "jerome96@gmail.com",
+                    "birthday": "1924-12-01"
+                },
+                {
+                    "username": "qowens",
+                    "sex": "M",
+                    "address": "606 Perry Walk, Lake Eugene, MI 02979",
+                    "name": "David Arnold",
+                    "email": "rebeccagonzalez@hotmail.com",
+                    "birthday": "1958-05-08"
+                },
+                {
+                    "username": "srosario",
+                    "sex": "F",
+                    "address": "81578 Combs Meadow Apt. 238, Katelynstad, OR 49583",
+                    "name": "Debra King",
+                    "email": "ashley62@hotmail.com",
+                    "birthday": "1958-02-12"
+                },
+                {
+                    "username": "nancy72",
+                    "sex": "F",
+                    "address": "6354 Samantha Path, West Michaelville, AK 56071",
+                    "name": "Wanda Morgan",
+                    "email": "ayalajustin@hotmail.com",
+                    "birthday": "1916-01-20"
+                },
+                {
+                    "username": "sarahglass",
+                    "sex": "F",
+                    "address": "1540 Bennett Fords, Lake Haileytown, MI 77375",
+                    "name": "Terri Thompson",
+                    "email": "kelly64@hotmail.com",
+                    "birthday": "1941-06-25"
+                },
+                {
+                    "username": "richardsontimothy",
+                    "sex": "F",
+                    "address": "70439 Elizabeth Islands Suite 788, Jameschester, CO 58791",
+                    "name": "Emily Lee",
+                    "email": "nicolekim@gmail.com",
+                    "birthday": "2007-05-27"
+                }
+
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("username").innerHTML = country[index].username;
+            document.getElementById("sex").innerHTML = country[index].sex;
+            document.getElementById("address").innerHTML = country[index].address;
+            document.getElementById("name").innerHTML = country[index].name;
+            document.getElementById("email").innerHTML = country[index].email;
+            document.getElementById("birthday").innerHTML = country[index].birthday;
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>

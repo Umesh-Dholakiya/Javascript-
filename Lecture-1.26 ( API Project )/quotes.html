@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+</head>
+
+<body>
+
+    <p id="quote"></p>
+    <p id="author"></p>
+    <p id="category"></p>
+    <button id="generate" onclick="generate()">Generate</button>
+
+    <script>
+
+        const generate = function () {
+
+            const country = [
+
+
+                {
+                    "quote": "The will of man is his happiness.",
+                    "author": "Friedrich Schiller",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "Every possession and every happiness is but lent by chance for an uncertain time, and may therefore be demanded back the next hour.",
+                    "author": "Arthur Schopenhauer",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "Musicians are probably the most uncomfortable people in themselves in the world. Happiness, I think, only exists when you're a child and once you go past 11, unfortunately it's gone.",
+                    "author": "Andrea Corr",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "I'd learned how much happiness money can bring you. Very little.",
+                    "author": "Rick Pitino",
+                    "category": "happiness"
+                },
+
+                {
+                    "quote": "The secret of happiness is: Find something more important than you are and dedicate your life to it.",
+                    "author": "Daniel Dennett",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "The secret of happiness is something to do.",
+                    "author": "John Burroughs",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "It takes great wit and interest and energy to be happy. The pursuit of happiness is a great activity. One must be open and alive. It is the greatest feat man has to accomplish.",
+                    "author": "Robert Herrick",
+                    "category": "happiness"
+                },
+                {
+                    "quote": "Plenty of people miss their share of happiness, not because they never found it, but because they didn't stop to enjoy it.",
+                    "author": "William Feather",
+                    "category": "happiness"
+                }
+
+            ];
+            let index = Math.floor(Math.random() * country.length);
+            document.getElementById("quote").innerHTML = country[index].quote;
+            document.getElementById("author").innerHTML = country[index].author;
+            document.getElementById("category").innerHTML = country[index].category;
+           
+        }
+
+        window.onload = function () {
+            generate();
+
+            document.getElementById("generate").addEventListener('click', generate);
+
+        }
+    </script>
+</body>
+
+</html>
