@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+
+    <!-- header start  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+        <div class="container">
+            <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-target="#header"
+                aria-controls="header" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse d-flex align-items-center justify-content-center" id="header">
+                <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                    <a href="#"
+                        style="font-size: 35px; font-weight: 600; margin-right: 60px; color: black; text-decoration: none; ">
+                        FoodLight
+                    </a>
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active fs-16 third-font" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link third-font fs-16" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link third-font fs-16" href="#">Catelog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link third-font fs-16" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link third-font fs-16" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link third-font fs-16" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex align-items-center">
+                <a class="me-3" href="#">
+                    <img src="assets/img/search_icon.webp" alt=""
+                        style="width: 23px; height: 23px; line-height: 20px; ">
+                </a>
+                <a href="cart.html" class="me-3 position-relative">
+                    <img src="assets/img/cart_icon.png" alt="" style="width: 23px; height: 23px; line-height: 20px; ">
+                </a>
+
+                <a href="#">
+                    <img src="assets/img/user_icon.png" alt="" style="width: 23px; height: 23px; line-height: 20px; ">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+
+    <!-- product section start  -->
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="shop">
+                    <h1 class="uppercase mb-5 text-center" style="margin-top: 50px;"> New Arrivals </h1>
+
+                    <div class="product" id="product">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- product section end -->
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+
+        let product = [
+
+
+            {
+                id: 1,
+                name: "Shakkarpara",
+                price: 100.00,
+                quantity: 1,
+                Image: "assets/img/1.png"
+            },
+            {
+                id: 2,
+                name: "Multigrain Puri",
+                price: 120.00,
+                quantity: 1,
+                Image: "assets/img/2.png"
+            },
+            {
+                id: 3,
+                name: "Nachos",
+                price: 120.00,
+                quantity: 1,
+                Image: "assets/img/3.png"
+            },
+            {
+                id: 4,
+                name: "Juvar Mamra",
+                price: 110.00,
+                quantity: 1,
+                Image: "assets/img/Juvarnamamra_1.png"
+
+            },
+            {
+                id: 5,
+                name: "Makai Kurkure",
+                price: 119.00,
+                quantity: 1,
+                Image: "assets/img/MakaiKurkure3.png"
+            },
+            {
+                id: 6,
+                name: "Masala Puff",
+                price: 140.00,
+                quantity: 1,
+                Image: "assets/img/MasalaPuff3.png"
+            },
+            {
+                id: 7,
+                name: "Panipuri Puff",
+                price: 130.00,
+                quantity: 1,
+                Image: "assets/img/PanipuriPuff3.png"
+
+            },
+            {
+                id: 8,
+                name: "Soya stick",
+                price: 120.00,
+                quantity: 1,
+                Image: "assets/img/Soyastick3.png"
+            },
+
+            {
+                id: 9,
+                name: "Stuff Marcha ni Kachri",
+                price: 119.10,
+                quantity: 1,
+                Image: "assets/img/StuffMarchaniKAchri3.png"
+            },
+            {
+                id: 10,
+                name: "Juvar na mamra",
+                price: 105.00,
+                quantity: 1,
+                Image: "assets/img/Juvarnamamra_4.png"
+            },
+            {
+                id: 11,
+                name: "Masala Bhakhari",
+                price: 109.00,
+                quantity: 1,
+                Image: "assets/img/MasalaBhakhri4_5e4d7135-5715-460c-89ea-7b31d92e995e.png"
+            },
+            {
+                id: 12,
+                name: "Oats Poha",
+                price: 125.00,
+                quantity: 1,
+                Image: "assets/img/OatsPoha4.png"
+            },
+            {
+                id: 13,
+                name: "Panipuri Puff",
+                price: 190.00,
+                quantity: 1,
+                Image: "assets/img/PanipuriPuff3.png"
+            },
+            {
+                id: 14,
+                name: "Soyabean",
+                price: 150.00,
+                quantity: 1,
+                Image: "assets/img/Soyabean_1.png"
+            },
+            {
+                id: 15,
+                name: "Farali Chavanu",
+                price: 100.00,
+                quantity: 1,
+                Image: "assets/img/12.png"
+            }
+        ];
+
+
+        let tbl = "";
+
+        product.map((p) => {
+            tbl +=
+
+                ` 
+                         <ul>
+                            <li>
+                                <div class="product_img">
+                                    <img src="${p.Image}" alt="">
+                                </div>
+
+                                <div class="product_text d-flex justify-content-center">
+                                    <h3 class="mt-5 gray uppercase fs-14 fw-600">${p.name}</h3>
+                                    <h4 class="gray fw-600">$ ${p.price}</h4>
+                                </div>
+                                <button class="add-to-cart-button" onclick="newcart(${p.id})">Add to Cart</button>
+                            </li>
+                        </ul>
+
+
+
+                 
+                 `
+        })
+
+        document.getElementById("product").innerHTML = tbl;
+
+        let cart = [];
+
+        const newcart = (id) => {
+            let c = product.find(item => item.id == id);
+
+            if (c) {
+
+                cart.push(c);
+                localStorage.setItem('cart', JSON.stringify(cart));
+                alert(" Your Product Successfully add To cart");
+
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

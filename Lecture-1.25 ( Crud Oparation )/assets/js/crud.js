@@ -11,9 +11,10 @@ let data = [
 ]
 
 function readAll() {
+    
     localStorage.setItem("object", JSON.stringify(data));
     var tabledata = document.querySelector(".data_table");
-    var object = localStorage.getItem("object");
+    var object = localSorage.getItem("object");
     var objectdata = JSON.parse(object);
     var element = "";
 
