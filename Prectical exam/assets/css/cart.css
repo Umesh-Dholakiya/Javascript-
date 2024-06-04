@@ -75,21 +75,19 @@ table .product_remove {
 .checkout{
     padding: 16px 40px;
     border-radius: 10px;
-    background-color: transparent;
+    background-color: #000;
     margin-right: 30px;
     text-transform: uppercase;
     font-size: 15px;
     font-weight: 600;
+    color: #fff;
 }
  .checkout{
     padding: 15px 35px;
     right: 0%;
     top: 30px;
 }
-.product_update a:hover .checkout{
-    background-color: #000;
-    color: #fff;
-}
+
 .product_Name{
     font-size: 25px;
 }
